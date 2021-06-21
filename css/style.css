@@ -1,134 +1,234 @@
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
 
 /* Appel des polices */
 
 
 
 
-/* Générique */
-
-:root {}
-
-
-
 
 /* Typographie */
-body {}
+body {
+    font-family: Lato, sans-serif;
+    font-size: 2.2rem;
+    line-height: 4rem;
+    text-align: center;
+    color: white;
+}
 
-h1,
-h2,
-h3,
-h4 {}
+h1{
+    font-family: Calligraffitti, sans-serif;
+    font-size: 17.5rem;
+    line-height: 20.1rem;
+    font-weight: normal;
+}
 
-p {}
+h2, h3{
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+}
 
-hr {}
-
+h4{
+    font-size: 3.2rem;
+    line-height: 3.9rem;
+}
 
 
 
 /* Layout */
 .container {
-    /* width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem; */
-}
-
-@media screen and (min-width: 36em) { /* Indiquer les mesures en em avec une base de 16px - Ex : 576/16 = 36em*/
-    .container {
-
-    }
-}
-
-@media screen and (min-width: 48em) { /* eq 768px */
-    .container {
-
-    }
-}
-
-@media screen and (min-width: 62em) { /* eq 992px */
-    .container {
-
-    }
-}
-
-@media screen and (min-width: 75em) { /* eq 1200px */
-    .container {
-
-    }
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 
 
-/* Navigation */
-/* .toggle-menu {
-    padding: 0.25rem 1rem;
-    color: var(--inverted);
-    background-color: rgba(0,0,0,.15);
-    border: 0;
-    border-radius: 2rem;
-    transition: .3s;
+
+
+
+/* Header */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 13.5rem;
 }
 
-.toggle-menu:hover,
-.toggle-menu:focus {
-    background-color: rgba(0,0,0,.35);
+.nav-logo{
+    max-width: 30%;
 }
 
-
-.menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: var(--accent);
-    transition: .5s;
+.nav-list{
+    display: flex;
+    justify-content: space-around;
 }
 
-.menu[hidden] {
-    display: block;
-    visibility: hidden;
-    transform: translateX(-100%);
+.nav-item a{
+    line-height: 3.9rem;
+    font-weight: 900;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
 }
 
-.menu:not([hidden]) {
-    transform: translateX(0);
+.nav-link:hover,
+.nav-link:focus{
+    background-color: white;
+    color: #3693D6;
+
 }
-
-.menu-link {
-    display: block;
-    padding: 1.6rem;
-    font-size: 1.4rem;
-    line-height: 1.2;
-    color: #fff;
-    text-decoration: none;
-    transition: .3s;
-}
-
-.menu-link:hover,
-.menu-link:focus {
-    background-color: rgba(0,0,0,.25);
-}
-
-@media screen and (min-width: 36em) { /* Indiquer les mesures en em avec une base de 16px - Ex : 576/16 = 36em*/
-    .toggle-menu {
-        display: none;
-    }
-
-    .menu,
-    .menu[hidden] {
-        display: flex;
-        visibility: visible;
-        position: static;
-        transform: translateX(0);
-    }
-} */
-
 
 
 /* Hero */
+.header{
+    padding-bottom: 8.5rem;
+    background-image: url("../img/Photo\ montagnes.png");
+}
+
+.header-title{
+    padding-bottom: 5rem;
+    transform: rotate(-10deg);
+    margin: auto;
+}
+
+.title{
+    font-size: 12.8rem;
+}
+
+.header-button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: #3693D6;
+    padding: .5rem 3rem;
+    border-radius: 5rem;
+    max-width: 20.5rem;
+}
+
+.header-button img{
+    margin-left: 2rem;
+}
+
+
+
+
+
+/* About Me */
+.about{
+    padding: 14.5rem;
+    background-color: #3693D6;
+}
+
+.about-title{
+    margin-bottom: 5rem;
+}
+
+.about-desc{
+    font-size: 4.2rem;
+    line-height: 6rem;
+}
+
+
+/* Our Work */
+.work-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.work-title{
+    padding: 11.5rem;
+    color: #3693D6;
+}
+
+.post{
+    position: relative;
+}
+
+.post:hover{
+    background-image: linear-gradient(#3693D6,#3693D6), url("../img/cold-daylight-fjord-1586298.png"));
+    opacity: 0.45;
+}
+
+.post-text{
+    position: absolute;
+    padding: rem;
+    top: 10%;
+    bottom: 10%;
+}
+
+.post-desc{
+    margin: 3rem 0;
+}
+
+.post-2{
+    grid-column: 2/4;
+}
+
+.post-4{
+    grid-area: 2/1/4/3;
+}
+
+.post-1 .post-text{
+    padding: 5rem;
+}
+
+.post-2 .post-text{
+    padding: 5rem;
+}
+
+.post-4 .post-text{
+    padding: 13.5rem;
+}
+
+
+/* Testimonial */
+.slide{
+    padding: 11.5rem 40rem;
+    color: #3693D6;
+}
+
+.swiper-slide img{
+    margin: 5rem auto;
+}
+
+.slide-name{
+    padding-bottom: 4rem;
+}
+
 
 
 
 /* Footer */
+.footer{
+    background-color: #3693D6;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 11.5rem;
+    padding-bottom: 11.5rem;
+}
+
+.footer-contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-network{
+    display: flex;
+}
+
+.location, .contact{
+    padding: 5rem;
+}
+
+.network-link{
+    margin-left: 5rem;
+}

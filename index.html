@@ -6,13 +6,19 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <title></title> -->
+
+        <title>SnowMount</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Lato:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet"> 
+
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/helpers.css">
         <link rel="stylesheet" href="css/style.css">
 
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <!-- Swiper - CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
 
     </head>
 
@@ -20,32 +26,35 @@
 
         <header>
             
-            <div class="header">
+            <div class="header container">
 
                 <nav class="nav">
 
-                    <img class="logo" src="" alt="Image SnowMount">
+                    <img class="nav-logo" src="img/Logo.svg" alt="Image SnowMount">
 
-                    <ul class="nav-list">
+                    <ul class="nav-list" role="list">
                         <li class="nav-item">
-                            <a class="nav-link">Home</a>
+                            <a href="#" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">About</a>
+                            <a href="#" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Contact</a>
+                            <a href="#" class="nav-link">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Say Hello</a>
+                            <a href="#" class="nav-link">Say Hello</a>
                         </li>
                     </ul>
 
                 </nav>
 
-                <h1 class="header-title">Wonderful World</h1>
+                <h1 class="header-title">Wonderful<br><span class="title">World</span></h1>
 
-                <a href="#" class="header-button">Our Work</a>
+                <a href="#work" class="header-button">
+                    <p>Our Work</p>
+                    <img src="img/Icône flèche.svg" alt="Our Work">
+                </a>
 
             </div>
 
@@ -53,50 +62,60 @@
 
         <main>
 
-            <section class="about">
+            <section class="about container">
                 <h2 class="about-title">About Me</h2>
-                <p class="about-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum sint omnis reiciendis exercitationem, consequuntur excepturi aut officia natus necessitatibus vero quos eveniet unde soluta. Cupiditate ipsa est excepturi molestias!</p>
+                <p class="about-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ipsum sint omnis reiciendis exercitationem, consequuntur excepturi aut officia natus necessitatibus vero!</p>
             </section>
 
-            <section class="work">
+            <section id="work" class="work container">
 
                 <h2 class="work-title">Our Works</h2>
 
                 <div class="work-layout">
 
-                    <div class="post">
-                        <img src="" alt="Image Layout" class="post-img">
-                        <h3 class="post-title">New Life</h3>
-                        <p class="post-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique corrupti earum sunt ullam perferendis accusamus ipsam natus explicabo atque voluptatibus!</p>
-                        <a href="#" class="post-link">See More</a>
+                    <div class="post post-1">
+                        <img src="img/cold-daylight-fjord-1586298.png" alt="Image Layout" class="post-img">
+                        <div class="post-text" hidden>
+                            <h3 class="post-title">New Life</h3>
+                            <p class="post-desc">Lorem ipsum dolor, sit amet consectetur adipisicing?</p>
+                            <a href="#" class="post-link">See More</a>
+                        </div>
                     </div>
 
-                    <div class="post">
-                        <img src="" alt="Image Layout" class="post-img">
-                        <h3 class="post-title">Animals</h3>
-                        <p class="post-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, officia. Corrupti ex aperiam iure laboriosam tempore officia illo nostrum quibusdam. Accusantium voluptates obcaecati debitis numquam vitae earum quia modi quo.</p>
-                        <a href="#" class="post-link">See More</a>
+                    <div class="post post-2">
+                        <img src="img/adorable-animal-breed-434090.png" alt="Image Layout" class="post-img">
+                        <div class="post-text" hidden>
+                            <h3 class="post-title">Animals</h3>
+                            <p class="post-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quaerat saepe magnam quae non, eligendi suscipit hic consectetur error tempore.</p>
+                            <a href="#" class="post-link">See More</a>
+                        </div>  
                     </div>
                     
-                    <div class="post">
-                        <img src="" alt="Image Layout" class="post-img">
-                        <h3 class="post-title">Fly High</h3>
-                        <p class="post-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ex adipisci iste delectus eligendi nam ratione, laboriosam quisquam similique magni unde nobis, debitis quibusdam necessitatibus officiis veniam consequuntur ab, tempore magnam ipsam vero fuga. Officiis repellendus quia hic dolorum atque!</p>
-                        <a href="#" class="post-link">See More</a>
+                    <div class="post post-4">
+                        <img src="img/action-active-cold-2433353.png" alt="Image Layout" class="post-img">
+                        <div class="post-text" hidden>
+                            <h3 class="post-title">Fly High</h3>
+                            <p class="post-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repellendus libero ratione odit vitae sunt dolor, vero minima, neque cupiditate voluptatem dolores expedita obcaecati dicta numquam earum doloremque iste modi!</p>
+                            <a href="#" class="post-link">See More</a>
+                        </div>
                     </div>
 
-                    <div class="post">
-                        <img src="" alt="Image Layout" class="post-img">
-                        <h3 class="post-title">New Life</h3>
-                        <p class="post-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa possimus blanditiis autem illum sunt enim culpa similique animi, odit maiores./p>
-                        <a href="#" class="post-link">See More</a>
+                    <div class="post post-1">
+                        <img src="img/beatiful-landscape-cold-colors-2832052.png" alt="Image Layout" class="post-img">
+                        <div class="post-text" hidden>
+                            <h3 class="post-title">Trust Me</h3>
+                            <p class="post-desc">Lorem ipsum dolor sit amet consectetur?</p>
+                            <a href="#" class="post-link">See More</a>
+                        </div>
                     </div>
 
-                    <div class="post">
-                        <img src="" alt="Image Layout" class="post-img">
-                        <h3 class="post-title">About</h3>
-                        <p class="post-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat recusandae voluptatem omnis. Facere itaque nobis nostrum enim, ea hic soluta!</p>
-                        <a href="#" class="post-link">See More</a>
+                    <div class="post post-1">
+                        <img src="img/adventure-adventurer-altitude-2577274.png" alt="Image Layout" class="post-img">
+                        <div class="post-text" hidden>
+                            <h3 class="post-title">About</h3>
+                            <p class="post-desc">Lorem, ipsum dolor sit amet consectetur.</p>
+                            <a href="#" class="post-link">See More</a>
+                        </div>
                     </div>
 
                 </div>
@@ -106,7 +125,7 @@
 
 
 
-            <section class="slide">
+            <section class="slide container">
 
                 <h2 class="slide-title">Testimonial</h2>
 
@@ -119,7 +138,7 @@
                         <!-- Slides -->
                         <div class="swiper-slide">
                             
-                            <img src="" alt="Photo Carolyn Clark" class="slide-img">
+                            <img src="img/Photo.png" alt="Photo Carolyn Clark" class="slide-img">
                             <h3 class="slide-name">Carolyn Clark</h3>
                             <p class="slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A aspernatur molestias nisi maiores error pariatur, ullam officia natus sit repudiandae?</p>
 
@@ -128,7 +147,7 @@
                         <div class="swiper-slide">
                             
                             <img src="" alt="Photo Carolyn Clark" class="slide-img">
-                            <h3 class="slide-name">Carolyn Clark</h3>
+                            <h3 class="slide-name">Carolyn</h3>
                             <p class="slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A aspernatur molestias nisi maiores error pariatur, ullam officia natus sit repudiandae?</p>
 
                         </div>
@@ -136,7 +155,7 @@
                         <div class="swiper-slide">
                             
                             <img src="" alt="Photo Carolyn Clark" class="slide-img">
-                            <h3 class="slide-name">Carolyn Clark</h3>
+                            <h3 class="slide-name">Clark</h3>
                             <p class="slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A aspernatur molestias nisi maiores error pariatur, ullam officia natus sit repudiandae?</p>
 
                         </div>
@@ -144,17 +163,11 @@
                     </div>
 
                     <!-- If we need pagination -->
-                    <div class="swiper-pagination">
-
-                    </div>
+                    <div class="swiper-pagination"></div>
                 
                     <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev">
-
-                    </div>
-                    <div class="swiper-button-next">
-
-                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 
                     <!-- If we need scrollbar -->
                     <div class="swiper-scrollbar">
@@ -169,23 +182,23 @@
 
         <footer>
         
-            <div class="footer">
+            <div class="footer container">
 
-                <img src="" alt="Logo SnowMount">
+                <img src="img/Logo déclinaison.svg" alt="Logo SnowMount">
 
                 <div class="footer-contact">
 
                     <div class="location">
 
                         <h4 class="location-title">Location</h4>
-                        <p class="location-desc">SnowMount 3979 Marseille Road New York</p>
+                        <p class="location-desc">SnowMount<br>3979 Marseille<br>Road New York</p>
 
                     </div>
 
                     <div class="contact">
 
                         <h4 class="contact-title">Contact</h4>
-                        <p class="contact-desc">(859)749-1380 jessica.lee@mail.com</p>
+                        <p class="contact-desc">(859)749-1380<br><span>jessica.lee@mail.com</span></p>
 
                     </div>
                     
@@ -193,9 +206,9 @@
 
                 <div class="footer-network">
 
-                    <a href="#" class="network-link"><img src="" alt="Logo Facebook" class="network-img"></a>
-                    <a href="#" class="network-link"><img src="" alt="Logo Instagram" class="network-img"></a>
-                    <a href="#" class="network-link"><img src="" alt="Logo Youtube" class="network-img"></a>
+                    <a href="#" class="network-link"><img src="img/Facebook.svg" alt="Logo Facebook" class="network-img"></a>
+                    <a href="#" class="network-link"><img src="img/Instagram.svg" alt="Logo Instagram" class="network-img"></a>
+                    <a href="#" class="network-link"><img src="img/youtube.svg" alt="Logo Youtube" class="network-img"></a>
 
                 </div>
 
@@ -203,8 +216,24 @@
             
         </footer>
 
-        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                direction: 'vertical',
+                loop: true,
+            
+                // Navigation arrows
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+        <script src="js/posts.js"></script>
 
     </body>
 
