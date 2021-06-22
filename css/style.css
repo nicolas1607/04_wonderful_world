@@ -151,14 +151,20 @@ h4{
     position: relative;
 }
 
-.post:hover{
-    background-image: linear-gradient(#3693D6,#3693D6), url("../img/cold-daylight-fjord-1586298.png"));
-    opacity: 0.45;
+.post-text{
+    visibility: hidden;
+}
+
+.post:hover .post-text{
+    visibility: visible;
+}
+
+.post:hover .post img{
+    opacity: ;
 }
 
 .post-text{
     position: absolute;
-    padding: rem;
     top: 10%;
     bottom: 10%;
 }
@@ -196,6 +202,10 @@ h4{
 
 .swiper-slide img{
     margin: 5rem auto;
+}
+
+.slide-desc{
+    margin-bottom: 5rem;
 }
 
 .slide-name{

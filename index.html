@@ -75,7 +75,7 @@
 
                     <div class="post post-1">
                         <img src="img/cold-daylight-fjord-1586298.png" alt="Image Layout" class="post-img">
-                        <div class="post-text" hidden>
+                        <div class="post-text">
                             <h3 class="post-title">New Life</h3>
                             <p class="post-desc">Lorem ipsum dolor, sit amet consectetur adipisicing?</p>
                             <a href="#" class="post-link">See More</a>
@@ -84,7 +84,7 @@
 
                     <div class="post post-2">
                         <img src="img/adorable-animal-breed-434090.png" alt="Image Layout" class="post-img">
-                        <div class="post-text" hidden>
+                        <div class="post-text">
                             <h3 class="post-title">Animals</h3>
                             <p class="post-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quaerat saepe magnam quae non, eligendi suscipit hic consectetur error tempore.</p>
                             <a href="#" class="post-link">See More</a>
@@ -93,7 +93,7 @@
                     
                     <div class="post post-4">
                         <img src="img/action-active-cold-2433353.png" alt="Image Layout" class="post-img">
-                        <div class="post-text" hidden>
+                        <div class="post-text">
                             <h3 class="post-title">Fly High</h3>
                             <p class="post-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia repellendus libero ratione odit vitae sunt dolor, vero minima, neque cupiditate voluptatem dolores expedita obcaecati dicta numquam earum doloremque iste modi!</p>
                             <a href="#" class="post-link">See More</a>
@@ -102,7 +102,7 @@
 
                     <div class="post post-1">
                         <img src="img/beatiful-landscape-cold-colors-2832052.png" alt="Image Layout" class="post-img">
-                        <div class="post-text" hidden>
+                        <div class="post-text">
                             <h3 class="post-title">Trust Me</h3>
                             <p class="post-desc">Lorem ipsum dolor sit amet consectetur?</p>
                             <a href="#" class="post-link">See More</a>
@@ -111,7 +111,7 @@
 
                     <div class="post post-1">
                         <img src="img/adventure-adventurer-altitude-2577274.png" alt="Image Layout" class="post-img">
-                        <div class="post-text" hidden>
+                        <div class="post-text">
                             <h3 class="post-title">About</h3>
                             <p class="post-desc">Lorem, ipsum dolor sit amet consectetur.</p>
                             <a href="#" class="post-link">See More</a>
@@ -146,7 +146,7 @@
 
                         <div class="swiper-slide">
                             
-                            <img src="" alt="Photo Carolyn Clark" class="slide-img">
+                            <img src="img/Photo.png" alt="Photo Carolyn Clark" class="slide-img">
                             <h3 class="slide-name">Carolyn</h3>
                             <p class="slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A aspernatur molestias nisi maiores error pariatur, ullam officia natus sit repudiandae?</p>
 
@@ -154,7 +154,7 @@
 
                         <div class="swiper-slide">
                             
-                            <img src="" alt="Photo Carolyn Clark" class="slide-img">
+                            <img src="img/Photo.png" alt="Photo Carolyn Clark" class="slide-img">
                             <h3 class="slide-name">Clark</h3>
                             <p class="slide-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A aspernatur molestias nisi maiores error pariatur, ullam officia natus sit repudiandae?</p>
 
@@ -168,11 +168,6 @@
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-                
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar">
-
-                    </div>
 
                 </div>
 
@@ -216,10 +211,11 @@
             
         </footer>
 
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
         <script>
             const swiper = new Swiper('.swiper-container', {
                 // Optional parameters
-                direction: 'vertical',
                 loop: true,
             
                 // Navigation arrows
@@ -227,13 +223,13 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
                 },
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
             });
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
-        <script src="js/posts.js"></script>
 
     </body>
 
